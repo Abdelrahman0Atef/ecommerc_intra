@@ -1,0 +1,27 @@
+allprojects {
+    configurations.all {
+        resolutionStrategy {
+            force 'com.google.firebase:firebase-common:17.0.0'
+            force 'com.google.android.gms:play-services-basement:16.2.0'
+            force 'com.google.firebase:firebase-iid:16.0.0'
+            force 'com.google.firebase:firebase-auth:17.0.0'
+        }
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+

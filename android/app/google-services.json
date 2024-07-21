@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042068495003",
+    "project_id": "ecomintra-e8c0f",
+    "storage_bucket": "ecomintra-e8c0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042068495003:android:bf4632a4a97c470ec1043e",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCyaIRyXd4h9ZibGxCjCLVkyk91Do65yY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
